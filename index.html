@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu wrapper">
+        <iconify-icon icon="uiw:setting" style="color: white"></iconify-icon>
+        <iconify-icon
+          icon="basil:user-solid"
+          style="color: white"
+        ></iconify-icon>
+      </div>
+    </header>
+
+     <div class="wrapper d-flex " >
+      
+      <section>
+        <div class="todo ">
+         <div class="gap">
+          <span> <h2>دست نویس  </h2></span>
+          <img src="icons/eye-off.svg" style="width: 20px; height: 20px;">
+          
+         </div>
+          <div style="height: 400px;">
+            <ul id="list-container">
+              
+            </ul>
+           
+            </div>
+            <div class="row ">
+              <button onclick="addTask()" id="add">+</button>
+              <input type="text" id="input-task" placeholder="نوشتن تسک جدید">
+          </div>
+        </div>
+      </section>
+      <main class="search ">
+        <div class="back-input">
+          <form action="https://www.google.com/search" method="get"> 
+            <input
+            type="text"
+            class="google-search"
+            placeholder=" جستجو در گوگل"
+          />
+          <img src="icons/google-icon.svg" alt="" class="gogle-logo">
+         <button type="submit"><iconify-icon icon="ic:twotone-search" style="font-size: 30px; color: #fff; text-align: center; padding-top: 6px;"></iconify-icon></button>
+          </form>
+        </div>
+       
+          <div class="grid">
+           
+            <div class="column">
+              <img
+                src="./icons/icon-park-outline-application-menu.svg"
+                alt=""/>
+              <p>دم دستی</p>
+            </div>
+            <div class="column">
+              <img src="./icons/favicon 1.svg" alt="" />
+              <p>شب</p>
+            </div>
+            <div class="column">
+              <img src="./icons/plus.svg" alt=""></i>
+            </div>
+            <div class="column">
+              <img src="./icons/plus.svg" alt=""></i>
+            </div>
+            <div class="column">
+              <img src="./icons/plus.svg" alt=""></i>
+            </div>
+            <div class="column">
+              <img src="./icons/plus.svg" alt=""></i>
+            </div>
+            
+            <div class="column">
+                <img src="./icons/plus.svg" alt=""></i>
+              </div>
+              <div class="column">
+                <img src="./icons/plus.svg" alt=""></i>
+              </div>
+              <div class="column">
+                <img src="./icons/plus.svg" alt=""></i>
+              </div>
+              <div class="column">
+                <img src="./icons/plus.svg" alt=""></i>
+              </div>
+              <div class="column">
+                <img src="./icons/plus.svg" alt=""></i>
+              </div>
+              <div class="column">
+                <img src="./icons/plus.svg" alt=""></i>
+              </div>
+              </div>
+      </main>
+     
+      <section class="">
+        <div class="time-weather">
+          
+          <div class="time">
+           
+            <h2 id="time"></h2>
+            <h3 id="date">
+            </h3>
+           <div class="">
+            <span><p id="ghamari"></p></span>
+            <span><p id="miladi"> </p></span>
+            <div class="d-flex">
+              <select name="" id="" class="option">
+                <option value="">تایمر</option>
+               </select>
+             <select name="" id="" class="option">
+              <option value="">اوقات شرعی</option>
+             </select>
+            </div>
+           </div>
+           
+          </div>
+          <div class="time" >
+            <div class="d-flex">
+            <h2 id="degree"></h2>
+            <img src="https://openweathermap.org/img/wn/03d@2x.png" style="color: #56a0ee; width: 50px; height: 50px;" alt="">
+            </div>
+            <p id="comedy-text"> <span
+              ><iconify-icon
+                icon="map:snow"
+                style="color: #56a0ee"
+              ></iconify-icon
+            ></span></p>
+            <div class="d-flex">
+              <p id="min"></p>
+              <p id="max"></p></div>
+            <select class="option" > 
+              <option value="" id="pish-bini"></option> </select>
+          </div>
+        </div>
+      </section>
+     </div>
+
+    
+    <script src="./javaScript/time.js"></script>
+    <script src="javaScript/weather.js"></script>
+    <script src="./javaScript/todo.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    
+  </body>
+</html>
